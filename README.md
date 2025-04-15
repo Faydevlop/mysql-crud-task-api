@@ -41,15 +41,20 @@ mysql-crud-task-api/
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone the repository
 
-```bash
+```
+1. Clone the repository
+
 git clone https://github.com/your-username/mysql-crud-task-api.git
+
 cd mysql-crud-task-api
+
 2. Install dependencies
 
 npm install
+
 3. Configure environment variables
+
 Create a .env file in the root folder and add:
 
 DB_HOST=localhost
@@ -57,13 +62,17 @@ DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=taskdb
 PORT=3000
+
 4. Set up the database
+
 Make sure MySQL is running, then create the database manually:
 
 CREATE DATABASE taskdb;
+
 5. Start the server
 
 node app.js
+
 Server will run on: http://localhost:3000
 
 📬 API Endpoints
@@ -73,7 +82,9 @@ POST	/api/tasks	Create a new task
 GET	/api/tasks	Get all tasks
 PUT	/api/tasks/:id	Update a task
 DELETE	/api/tasks/:id	Delete a task
+
 🧪 Testing with Thunder Client / Postman
+
 URL: http://localhost:3000/api/tasks
 
 Method: POST
